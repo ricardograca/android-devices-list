@@ -32,6 +32,7 @@ local devices =
 {
 	-- Acer
 	{ model = "A100", inchesDiagonal = 7.0, comModel = "Iconia Tab A100" },
+	{ model = "Iconia Tab A100", inchesDiagonal = 7.0, },
 	{ model = "A101", inchesDiagonal = 7.0, comModel = "Iconia Tab A101" },
 	{ model = "A200", inchesDiagonal = 10.1, comModel = "Iconia Tab A200" },
 	{ model = "A500", inchesDiagonal = 10.1, comModel = "Iconia Tab A500" },
@@ -49,6 +50,7 @@ local devices =
 	-- Asus
 	{ model = "Transformer TF101", inchesDiagonal = 10.1, },
 	{ model = "Epad", inchesDiagonal = 10.1, comModel = "Eee Pad Transformer" },
+	{ model = "Eee Pad Transformer TF101", inchesDiagonal = 10.1, },
 
 	-- Barnes & Noble
 	{ model = "Nook Color", inchesDiagonal = 7.0, },
@@ -69,11 +71,13 @@ local devices =
 	{ model = "HTC Desire S", inchesDiagonal = 3.7 },
 	{ model = "Desire HD", inchesDiagonal = 4.3 },
 	{ model = "Desire HD2", inchesDiagonal = 4.3 },
+	{ model = "PC36100", inchesDiagonal = 4.3, comModel = "EVO 4G" },
 	{ model = "Vision", inchesDiagonal = 3.7, comModel = "Desire Z/T-Mobile G2" },
 	{ model = "HTC Vision", inchesDiagonal = 3.7, comModel = "Desire Z/T-Mobile G2" }, -- Unverified
 	{ model = "Sensation", inchesDiagonal = 4.3 }, -- Unverified
 	{ model = "HTC Sensation", inchesDiagonal = 4.3 }, -- Unverified
 	{ model = "HTC Sensation Z710e", inchesDiagonal = 4.3 }, -- Unverified
+	{ model = "Flyer", inchesDiagonal = 7.0, },
 	{ model = "HTC Flyer", inchesDiagonal = 7.0, },
 	{ model = "HTC Flyer P510e", inchesDiagonal = 7.0, }, -- Unverified
 
@@ -81,6 +85,7 @@ local devices =
 	{ model = "LG-P500", inchesDiagonal = 3.2, comModel = "Optimus One" },
 	{ model = "LG-P920", inchesDiagonal = 4.3, comModel = "Optimus 3D" }, -- Unverified
 	{ model = "LG-P970", inchesDiagonal = 4.0, comModel = "Optimus Black" },
+	{ model = "US855", inchesDiagonal = 4.0, comModel = "Optimus Black" },
 	{ model = "Optimus 2X", inchesDiagonal = 4.0, },
 	{ model = "LG-P990", inchesDiagonal = 4.0, comModel = "Optimus 2X" }, -- Unverified
 	{ model = "SU660", inchesDiagonal = 4.0, comModel = "Optimus 2X korean" }, -- Unverified
@@ -89,18 +94,22 @@ local devices =
 	{ model = "VS910", inchesDiagonal = 4.3, comModel = "Revolution" }, -- Unverified
 	{ model = "VS910 4G", inchesDiagonal = 4.3, comModel = "Revolution" }, -- Unverified
 	{ model = "LG-V900", inchesDiagonal = 8.9, comModel = "Optimus Pad" }, -- Unverified
+	{ model = "V900", inchesDiagonal = 8.9, comModel = "Optimus Pad" },
+	{ model = "L-06C", inchesDiagonal = 8.9, comModel = "Optimus Pad" },
 
 	-- Motorola
 	{ model = "MB525", inchesDiagonal = 3.7, comModel = "Defy" },
 	{ model = "MB526", inchesDiagonal = 3.7, comModel = "Defy+" },
 	{ model = "MB860", inchesDiagonal = 4.0, comModel = "Atrix 4G" },
 	{ model = "Droid", inchesDiagonal = 3.7, },
+	{ model = "Milestone", inchesDiagonal = 3.7, },
 	{ model = "DROID 2", inchesDiagonal = 3.7 },
 	{ model = "A953", inchesDiagonal = 3.7, comModel = "Milestone 2" },
 	{ model = "ME722", inchesDiagonal = 3.7, comModel = "Milestone 2" },
 	{ model = "DROID 2 GLOBAL", inchesDiagonal = 3.7 },
 	{ model = "Droid X", inchesDiagonal = 4.3, },
 	{ model = "Xoom", inchesDiagonal = 10.1, },
+	{ model = "MZ601", inchesDiagonal = 10.1, comModel = "Xoom", },
 
 	-- Samsung
 	{ model = "GT-I5500", inchesDiagonal = 2.8, comModel = "Galaxy 5" },
@@ -109,13 +118,16 @@ local devices =
 	{ model = "SGH-T959P", inchesDiagonal = 4.0, comModel = "Galaxy S (Telus Fascinate)" },
 	{ model = "GT-I9000", inchesDiagonal = 4.0, comModel = "Galaxy S" },
 	{ model = "GT-I9001", inchesDiagonal = 4.0, comModel = "Galaxy S" },
+	{ model = "SHW M110S", inchesDiagonal = 4.0, comModel = "Galaxy S Korea" },
+	{ model = "SC-02B", inchesDiagonal = 4.0, comModel = "Galaxy S DoCoMo" },
 	{ model = "GT-I9100", inchesDiagonal = 4.3, comModel = "Galaxy S2" },
 	{ model = "SAMSUNG-SGH-I777", inchesDiagonal = 4.3, comModel = "Galaxy S2 AT&T" },
 	{ model = "SGH-T989", inchesDiagonal = 4.3, comModel = "Galaxy S2 T-Mobile" },
-	{ model = "GT-N7000", inchesDiagonal = 10.1, comModel = "Galaxy Note" },
+	{ model = "GT-N7000", inchesDiagonal = 5.0, comModel = "Galaxy Note" },
 	{ model = "Galaxy Tab", inchesDiagonal = 7.0, },
 	{ model = "GT-P1000", inchesDiagonal = 7.0, comModel = "Galaxy Tab" },
 	{ model = "GT-P1010", inchesDiagonal = 7.0, comModel = "Galaxy Tab" },
+	{ model = "SGH-T849", inchesDiagonal = 7.0, comModel = "Galaxy Tab T-Mobile" },
 	{ model = "GT-P6200", inchesDiagonal = 7.0, comModel = "Galaxy Tab 7.0 Plus" },
 	{ model = "GT-P6210", inchesDiagonal = 7.0, comModel = "Galaxy Tab 7.0 Plus" },
 	{ model = "GT-P6800", inchesDiagonal = 7.7, comModel = "Galaxy Tab 7.7" },
@@ -133,6 +145,10 @@ local devices =
 	{ model = "shakira", inchesDiagonal = 3.0, comModel = "Xperia X8" }, -- Unverified
 	{ model = "X10", inchesDiagonal = 4.0, comModel = "Xperia X10" },
 	{ model = "E10a", inchesDiagonal = 2.55, comModel = "Xperia X10 mini" },
+	{ model = "LT15i", inchesDiagonal = 4.2, comModel = "Xperia Arc" },
+	
+	-- Toshiba
+	{ model = "Folio 100", inchesDiagonal = 10.1, },
 
 	-- ZTE
 	{ model = "Blade", inchesDiagonal = 3.5 },
@@ -143,3 +159,4 @@ local devices =
 }
 
 return devices
+
