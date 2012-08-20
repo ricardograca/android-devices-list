@@ -1,6 +1,6 @@
 - - -
 
-# Android devices list (in a Lua table) 0.3
+# Android devices list (in a Lua table) 0.4
 
 - - -
 
@@ -34,11 +34,15 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ## ABOUT:
 
-This is a list of Android devices with some information regarding each model. So far only includes screen size, measured
-in diagonal inches and comercial name, in case the model name isn't explicit enough. In total there are 132 Android and
-Apple devices listed.
+This is a list of mobile devices (mainly Android) with some information regarding each model. So far only includes
+screen size, measured in diagonal inches, in some cases screen width and height in pixels and comercial name in case the
+model name isn't explicit enough. In total there are 165 Android and Apple devices listed.
 
 ##CHANGELOG:
+
+**0.4**  
+  - added 33 more devices (thanks to [Addictive Zone](http://addictivezone.com/ "Addictive Zone Home"))  
+  - fixed wrong screen size of Sony Tablet S
 
 **0.3**  
   - added more devices  
